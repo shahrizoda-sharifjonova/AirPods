@@ -98,7 +98,7 @@ body{
 .convenience__content{
     display: flex;
     flex-direction: column;
-    row-gap: 100px; 
+    row-gap: 150px; 
 }
 .convenience__text{
     max-width: 400px;
@@ -109,4 +109,109 @@ body{
 }
 .convenience__img{
     width: 500px;
+}
+.convenience-item__text{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    width: 390px;
+}
+.convenience-item__text-1::after{
+    content: '';
+    min-width: 60px;
+    height: 1px;
+    background: #C4C4C4;
+    display: block;
+    margin-left: 30px;
+}
+.convenience-item__text-1{
+    margin-right: 30px;
+    text-align: right;
+}
+.convenience-item__text-2{
+    margin-left: 30px;
+    text-align: left;
+}
+.convenience-item__text-2::before{
+    content: '';
+    min-width: 60px;
+    height: 1px;
+    background: #C4C4C4;
+    display: block;     
+    margin-right: 30px;
+}
+.convenience__img-3{
+    width: 250px;
+}
+.about{
+    margin-top: 150px;
+    margin-bottom: 80px;
+}
+.about__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about__item{
+    background: #FFFFFF;
+    border-radius: 6px;
+    padding: 20px 50px;
+    text-align: center;
+}
+.about__title{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.about__text{
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.about__btn{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 7px 57px;
+    background: #151515;
+    text-decoration: none;
+}
+.footer{
+    background: #282828;
+    box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.25);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__lists{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    list-style: none;
+}
+.footer__link{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.footer__icon:not(:last-child){
+    margin-right: 30px;
 }
